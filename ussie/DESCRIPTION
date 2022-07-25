@@ -3,7 +3,7 @@ Title: Work with European Football Data
 Version: 0.0.0.9000
 Authors@R: 
     person("Sam", "Tauke", , "stauke@cornerstone.com", role = c("aut", "cre"))
-Description: Standardize and merge data from european football clubs.
+Description: Standardize and merge data from european football clubs. added
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
