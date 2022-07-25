@@ -1,9 +1,9 @@
 Package: project
-Title: What the Package Does (One Line, Title Case)
+Title: Work with European Football Data
 Version: 0.0.0.9000
 Authors@R: 
     person("Sam", "Tauke", , "stauke@cornerstone.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: Standardize and merge data from european football clubs.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
