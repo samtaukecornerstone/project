@@ -48,5 +48,69 @@ devtools::check()
 
 usethis::use_mit_license("Sam Tauke")
 
+# Add rogyen skeleton
+code -> insert roxygen skeleton
+
+# then Convert Roxygen comments to rd
+devtools::document()
+
+
+# Make package level documentation
+
+usethis::use_package_doc()
+
+
+
+
+
+# Package Dependencies ----------------------------------------------------
+
+# Add dplyr as a dependency in the DESCRIPTION file, still need to use :: notation
+usethis::use_package("dplyr")
+
+# Add package to the description file, add @importFrom to the projects-package.R and add to the NAMESPACE
+# Allows us to use tibble::tibble without the :: notation
+usethis::use_import_from("tibble","tibble")
+
+
+# Citation Files ----------------------------------------------------------
+
+# Add a citation cff file to your package
+
+cffr::cff_write()
+
+
+
+# Testing the Package -----------------------------------------------------
+
+# First time setting up the environment
+usethis::use_testthat(3)
+
+
+# To make interactive testthat session:
+library(testthat)
+local_edition(3)
+
+
+# Initiate a test
+usethis::use_test("matches.R")
+
+# Run a specific test
+testthat::test_file('tests/testthat/test-matches.R')
+
+# To run all tests
+test()
+
+# Tests are run automatically by devtools::check()
+
+
+
+# Test Coverage -----------------------------------------------------------
+
+#coverage on the active file:
+devtools::test_coverage_active_file()
+
+#coverage on the whole package:
+devtools::test_coverage()
 
 
