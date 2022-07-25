@@ -114,3 +114,23 @@ devtools::test_coverage_active_file()
 devtools::test_coverage()
 
 
+
+# Build Website -----------------------------------------------------------
+
+# Make a RMD README
+usethis::use_readme_rmd()
+
+# Render with
+devtools::build_readme()
+
+# Add a github badge from a continuous integration process that the packages passes the checks
+usethis::use_github_action_check_standard()
+
+
+# Write a vignette
+usethis::use_vignette()
+
+devtools::build_rmd("vignettes/ussie.Rmd")
+
+
+
