@@ -133,4 +133,11 @@ usethis::use_vignette()
 devtools::build_rmd("vignettes/ussie.Rmd")
 
 
+# packagedown
+
+# First time
+usethis::use_pkgdown()
+
+# To build locally
+pkgdown::build_site()
 
