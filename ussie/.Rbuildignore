@@ -8,3 +8,5 @@
 ^ussie\.Rcheck$
 ^ussie.*\.tar\.gz$
 ^ussie.*\.tgz$
+^README\.Rmd$
+^\.github$
