@@ -5,3 +5,6 @@
 ^project.*\.tgz$
 ^LICENSE\.md$
 ^CITATION\.cff$
+^ussie\.Rcheck$
+^ussie.*\.tar\.gz$
+^ussie.*\.tgz$
