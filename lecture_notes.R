@@ -36,3 +36,17 @@ usethis::use_r("file_name")
 devtools::load_all()
 
 
+
+
+# Check to make sure everything in the package is good --------------------
+devtools::check()
+
+
+
+# Add licensing -----------------------------------------------------------
+
+
+usethis::use_mit_license("Sam Tauke")
+
+
+
