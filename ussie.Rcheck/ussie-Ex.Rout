@@ -1,0 +1,88 @@
+
+R version 4.2.1 (2022-06-23) -- "Funny-Looking Kid"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "ussie"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> base::assign(".ExTimings", "ussie-Ex.timings", pos = 'CheckExEnv')
+> base::cat("name\tuser\tsystem\telapsed\n", file=base::get(".ExTimings", pos = 'CheckExEnv'))
+> base::assign(".format_ptime",
++ function(x) {
++   if(!is.na(x[4L])) x[1L] <- x[1L] + x[4L]
++   if(!is.na(x[5L])) x[2L] <- x[2L] + x[5L]
++   options(OutDec = '.')
++   format(x[1L:3L], digits = 7L)
++ },
++ pos = 'CheckExEnv')
+> 
+> ### * </HEADER>
+> library('ussie')
+> 
+> base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+> base::assign(".old_wd", base::getwd(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("uss_make_matches")
+> ### * uss_make_matches
+> 
+> flush(stderr()); flush(stdout())
+> 
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: uss_make_matches
+> ### Title: Makes a standard dataframe for league data
+> ### Aliases: uss_make_matches
+> 
+> ### ** Examples
+> 
+> uss_make_matches(engsoccerdata::spain,"Spain")
+# A tibble: 23,915 × 8
+   country tier  season date       home               visitor    goals…¹ goals…²
+   <chr>   <fct>  <int> <date>     <chr>              <chr>        <int>   <int>
+ 1 Spain   1       1928 1929-02-10 Arenas de Getxo    Atletico …       2       3
+ 2 Spain   1       1928 1929-02-10 Espanyol Barcelona Real Union       3       2
+ 3 Spain   1       1928 1929-02-10 Real Madrid        CE Europa        5       0
+ 4 Spain   1       1928 1929-02-10 Real Sociedad      Athletic …       1       1
+ 5 Spain   1       1928 1929-02-12 Racing Santander   FC Barcel…       0       2
+ 6 Spain   1       1928 1929-02-17 FC Barcelona       Real Madr…       1       2
+ 7 Spain   1       1928 1929-02-17 Athletic Bilbao    Espanyol …       9       0
+ 8 Spain   1       1928 1929-02-17 Atletico Madrid    Real Soci…       0       3
+ 9 Spain   1       1928 1929-02-17 Real Union         Racing Sa…       3       1
+10 Spain   1       1928 1929-02-17 CE Europa          Arenas de…       5       2
+# … with 23,905 more rows, and abbreviated variable names ¹​goals_home,
+#   ²​goals_visitor
+# ℹ Use `print(n = ...)` to see more rows
+> 
+> 
+> 
+> base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
+> base::cat("uss_make_matches", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
+> ### * <FOOTER>
+> ###
+> cleanEx()
+> options(digits = 7L)
+> base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  0.588 0.023 1.021 0 0 
+> grDevices::dev.off()
+null device 
+          1 
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')
