@@ -9,5 +9,7 @@ test_that("uss_make_matches works", {
     expect_identical(england$country,rep("England",nrow(england)))
 
     expect_s3_class(england$tier, "factor")
+
+    expect_snapshot(dplyr::glimpse(england))
 })
 
