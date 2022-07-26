@@ -1,9 +1,7 @@
 pandoc: 2.14.2
 pkgdown: 2.0.6
 pkgdown_sha: ~
-articles: {}
-last_built: 2022-07-25T20:54Z
-urls:
-  reference: https://samtaukecornerstone.github.io/project/reference
-  article: https://samtaukecornerstone.github.io/project/articles
+articles:
+  ussie: ussie.html
+last_built: 2022-07-26T12:55Z
 
