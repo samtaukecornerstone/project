@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+ussie.Rcheck/
+ussie*.tar.gz
+ussie*.tgz
+/doc/
+/Meta/

@@ -12,9 +12,10 @@ URL: https://github.com/samtaukecornerstone/project
 BugReports: https://github.com/samtaukecornerstone/project/issues
 Imports: 
     dplyr,
+    engsoccerdata,
+    rlang,
     tibble
 Suggests: 
-    engsoccerdata,
     knitr,
     rmarkdown,
     testthat (>= 3.0.0)

@@ -7,3 +7,8 @@
 ^docs$
 ^pkgdown$
 ^\.github$
+^ussie\.Rcheck$
+^ussie.*\.tar\.gz$
+^ussie.*\.tgz$
+^doc$
+^Meta$
